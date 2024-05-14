@@ -2,7 +2,15 @@
 
 ### Design theme - WhatsApp chat
 
+EN :
+```
+Design with the "WhatsApp" theme
+```
+
+ID :
+```
 Desain dengan mengusung tema "WhatsApp" ala-ala
+```
 
 ### Code Reference
 
