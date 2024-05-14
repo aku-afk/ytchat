@@ -1,9 +1,4 @@
-/*
-    custom
-*/
-
-@import url("https://fonts.googleapis.com/css?family=Changa One");
-@import url("https://fonts.googleapis.com/css?family=Imprima");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /* Background colors*/
 body {
@@ -40,8 +35,8 @@ yt-live-chat-author-chip #author-name {
 }
 /* Outlines */
 yt-live-chat-renderer * {
-  text-shadow: -2px -2px #000000,-2px -1px #000000,-2px 0px #000000,-2px 1px #000000,-2px 2px #000000,-1px -2px #000000,-1px -1px #000000,-1px 0px #000000,-1px 1px #000000,-1px 2px #000000,0px -2px #000000,0px -1px #000000,0px 0px #000000,0px 1px #000000,0px 2px #000000,1px -2px #000000,1px -1px #000000,1px 0px #000000,1px 1px #000000,1px 2px #000000,2px -2px #000000,2px -1px #000000,2px 0px #000000,2px 1px #000000,2px 2px #000000;
-  font-family: "Imprima";
+  
+  font-family: "Roboto";
   font-size: 18px !important;
   line-height: normal !important;
 }
@@ -99,7 +94,7 @@ yt-live-chat-text-message-renderer #author-badges {
 yt-live-chat-text-message-renderer #timestamp {
   
   color: #999999 !important;
-  font-family: "Imprima";
+  font-family: "Roboto";
   font-size: 16px !important;
   line-height: 16px !important;
 }
@@ -108,7 +103,7 @@ yt-live-chat-text-message-renderer #timestamp {
 yt-live-chat-text-message-renderer #author-name[type="owner"],
 yt-live-chat-text-message-renderer #author-name.owner,
 yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="owner"] {
-  color: #ffd600 !important;
+  color: #ff0066 !important;
 }
 
 yt-live-chat-text-message-renderer #author-name[type="moderator"],
@@ -125,8 +120,8 @@ yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="memb
 
 /* Channel names. */
 yt-live-chat-text-message-renderer #author-name {
-  color: #cccccc !important;
-  font-family: "Changa One";
+  color: #00ff00 !important;
+  font-family: "Roboto";
   font-size: 20px !important;
   line-height: 20px !important;
 }
@@ -140,7 +135,7 @@ yt-live-chat-text-message-renderer #author-name::after {
 yt-live-chat-text-message-renderer #message,
 yt-live-chat-text-message-renderer #message * {
   color: #ffffff !important;
-  font-family: "Imprima";
+  font-family: "Roboto";
   font-size: 18px !important;
   line-height: normal !important;
   letter-spacing: normal !important;
@@ -153,7 +148,7 @@ yt-live-chat-paid-message-renderer #author-name *,
 yt-live-chat-legacy-paid-message-renderer #event-text,
 yt-live-chat-legacy-paid-message-renderer #event-text * {
   color: #ffffff !important;
-  font-family: "Changa One";
+  font-family: "Roboto";
   font-size: 20px !important;
   line-height: 20px !important;
 }
@@ -163,7 +158,7 @@ yt-live-chat-paid-message-renderer #purchase-amount *,
 yt-live-chat-legacy-paid-message-renderer #detail-text,
 yt-live-chat-legacy-paid-message-renderer #detail-text * {
   color: #ffffff !important;
-  font-family: "Imprima";
+  font-family: "Roboto";
   font-size: 18px !important;
   line-height: 18px !important;
 }
@@ -171,7 +166,7 @@ yt-live-chat-legacy-paid-message-renderer #detail-text * {
 yt-live-chat-paid-message-renderer #content,
 yt-live-chat-paid-message-renderer #content * {
   color: #ffffff !important;
-  font-family: "Imprima";
+  font-family: "Roboto";
   font-size: 18px !important;
   line-height: 18px !important;
 }
@@ -213,7 +208,7 @@ yt-live-chat-ticker-paid-message-item-renderer *,
 yt-live-chat-ticker-sponsor-item-renderer,
 yt-live-chat-ticker-sponsor-item-renderer * {
   color: #ffffff !important;
-  font-family: "Imprima";
+  font-family: "Roboto";
 }
 
 yt-live-chat-mode-change-message-renderer, 
