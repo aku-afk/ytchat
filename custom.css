@@ -134,12 +134,12 @@ yt-live-chat-legacy-paid-message-renderer #author-photo {
 
 /* Hide badges. */
 yt-live-chat-text-message-renderer #author-badges {
-  display: none !important;
+  display: absolute !important;
   width : 30px;
   height: 30px;
   position: absolute;
-  top: 50%;
-  left: 20px;
+  top: 7px;
+  right: -5px;
   z-index: -1;
   /*vertical-align: text-right !important;*/
 }
