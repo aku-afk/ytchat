@@ -72,6 +72,31 @@ yt-live-chat-text-message-renderer {
   }
 }
 
+yt-live-chat-paid-message-renderer {
+  padding: 7px 14px 6px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 15px 15px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+  margin-top: 10px;
+  margin-left: 55px;
+  width: fit-content;
+  max-width: calc(100% - 66px);
+  &::before {
+    position: absolute;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAMAAADp2asXAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACQUExURUxpccPDw9ra2m9vbwAAAAAAADExMf///wAAABoaGk9PT7q6uqurqwsLCycnJz4+PtDQ0JycnIyMjPf3915eXvz8/E9PT/39/RMTE4CAgAAAAJqamv////////r6+u/v7yUlJeXl5f///5ycnOXl5XNzc/Hx8f///xUVFf///+zs7P///+bm5gAAAM7Ozv///2fVensAAAAvdFJOUwCow1cBCCnqAhNAnY0WIDW2f2/hSeo99g1lBYT87vDXG8/6d8oL4sgM5szrkgl660OiZwAAAHRJREFUKM/ty7cSggAABNFVUQFzwizmjPz/39k4YuFWtm55bw7eHR6ny63+alnswT3/rIDzUSC7CrAziPYCJCsB+gbVkgDtVIDh+DsE9OTBpCtAbSBAZSEQNgWIygJ0RgJMDWYNAdYbAeKtAHODlkHIv997AkLqIVOXVU84AAAAAElFTkSuQmCC");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    top: 0px;
+    left: -20px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
 /* Outlines */
 yt-live-chat-renderer * {
   
@@ -107,10 +132,14 @@ yt-live-chat-legacy-paid-message-renderer {
   padding-right: 4px !important;
 }
 
+
 yt-live-chat-paid-message-renderer #header {
-  padding-left: 4px !important;
-  padding-right: 4px !important;
+  /*width: fit-content;*/
+  border-radius: 15px;
+  padding: 20px 10px 20px 10px !important;
 }
+
+
 
 /* Avatars. */
 yt-live-chat-text-message-renderer #author-photo {
@@ -123,7 +152,14 @@ yt-live-chat-text-message-renderer #author-photo {
   margin-right: 30px !important;
 }
 
-yt-live-chat-paid-message-renderer #author-photo,
+yt-live-chat-paid-message-renderer #author-photo {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 24px !important;
+  margin-top: -7px !important;
+  margin-left: -55px !important;
+  margin-right: 30px !important;
+}
 yt-live-chat-legacy-paid-message-renderer #author-photo {
   
   width: 24px !important;
@@ -228,7 +264,8 @@ yt-live-chat-legacy-paid-message-renderer #detail-text * {
 
 yt-live-chat-paid-message-renderer #content,
 yt-live-chat-paid-message-renderer #content * {
-  color: #ffffff !important;
+  background: transparent !important;
+  color: #000000 !important;
   font-family: "Roboto";
   font-size: 18px !important;
   line-height: 18px !important;
